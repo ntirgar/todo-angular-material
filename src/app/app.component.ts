@@ -5,7 +5,7 @@ import { Todo } from './store/todo/types';
   selector: 'my-app',
   template: `
     <mat-toolbar color="primary">
-      <a mat-button routerLink="">Todo</a>
+      <a mat-button class="title" routerLink="">Todo</a>
       <a mat-button routerLink="add">
         ADD
       </a>
@@ -19,6 +19,9 @@ import { Todo } from './store/todo/types';
       header {
         border: 1px solid pink;
         padding: 0 16px;
+      }
+      .title {
+        margin-right: auto;
       }
     `
   ]
